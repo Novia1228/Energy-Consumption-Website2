@@ -1,0 +1,178 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E7E1D5;
+    color: #333;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E7E1D5;
+    color: #333;
+}
+
+/* Header & Navigation */
+.header {
+    background-color: #a97d65; /* Power logo's latte */
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+/* Logo Styling */
+.logo img {
+    width: 60px; /* Set the width */
+    aspect-ratio: 1; /* Maintains square aspect ratio */
+    object-fit: cover; /* Ensures the image fills the area without stretching */
+    border-radius: 50%; /* Makes it a circle */
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Mouse-Over Effect for Logo */
+.logo img:hover {
+    transform: scale(1.1) rotate(5deg); /* Slight zoom and rotate effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow */
+}
+
+/* Navigation Menu */
+nav ul {
+    font-size: 20px;
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+/* Navigation Links */
+nav ul li a {
+    text-decoration: none;
+    color: white; /* Change text color to white */
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Mouse-Over Effect for Navigation */
+nav ul li a:hover {
+    transform: scale(1.1); /* Slight zoom and rotate effect */
+    transform: scale(1.1) ; /* Slight zoom*/
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.34); /* Enhance shadow */
+}
+
+
+/* Main Content */
+main {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.734);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(26, 197, 7, 0.1);
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #d9534f;
+}
+
+section {
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/*Partition for Data */
+.partition {
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 30px 0;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.partition-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.sub-partition {
+    margin-top: 20px;
+    padding: 10px;
+    border-left: 4px solid #ccc;
+    background-color: #f1f1f1ea;
+}
+
+/*Img for Data*/
+.visual-img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    width: 700px;   
+    height: auto;
+}
+
+.shadow-img {
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    padding: 10px;
+}
+
+
+/* Footer */
+footer {
+
+    text-align: center;
+    padding: 0.1rem;
+    background-color: #372f2c;
+    color: white;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    main {
+        width: 95%;
+    }
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Energy Insights</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <nav>
+            <div class="logo" id="logo">
+                <a href="index.html">
+                    <img src="PowerIcon.png" alt="Power Logo">
+                </a>
+            </div>            
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="television.html">Televisions</a></li>
+                <li><a href="data.html">Data</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h1>TV ENERGY DATA</h1>
+        <p>This visualisation story is based on energy consumption data for televisions available in the Australian market. The goal is to clearly communicate patterns and insights that help audiences understand and act on energy efficiency trends.</p>
+
+        <!-- Step 1 -->
+        <section class="partition">
+            <h2 class="partition-title">Q1: Who is the audience?</h2>
+            <p>This data story is designed for energy-conscious households, retailers looking to stock efficient appliances, and policy makers interested in market trends. These groups benefit from clear, visual insights that simplify technical energy data into accessible information they can act on. Whether someone is buying a new TV or analysing efficiency patterns, this visualisation helps guide informed decisions.</p>
+        </section>
+
+        <!-- Step 2 -->
+        <section class="partition">
+            <h2 class="partition-title">Q2: What do they want to know?</h2>
+            <p>From an audience perspective, these are the key questions they care about:</p>
+            <ul>
+                <li>What screen technologies (LED, OLED, etc.) are most common, and how do they differ in energy use?</li>
+                <li>Does a bigger screen mean more electricity consumption?</li>
+                <li>Which TV brands are more energy-efficient?</li>
+                <li>What screen sizes dominate the market?</li>
+                <li>Are there hidden patterns that can help people choose better, smarter options?</li>
+            </ul>
+        </section>
+
+        <!-- Step 3 -->
+        <section class="partition">
+            <h2 class="partition-title">Q3: How are you going to present this information?</h2>
+            <p>We used KNIME Analytics Platform to clean, group, and visualise the dataset. For each major question, we created a relevant chart — such as pie charts, bar graphs, and scatter plots — and included simple supporting text to explain what the data reveals. This approach follows a visual storytelling method to make the insights more engaging and digestible for a general audience.</p>
+        </section>
+
+        <!-- Step 4 - Story -->
+        <section class="partition">
+            <h2 class="partition-title">Q4: Storyboard</h2>
+    
+            <div class="sub-partition">
+                <h3>Q1: Screen Technologies</h3>
+                <p>LED dominates, followed by OLED and QLED.</p>
+                <img src="knime-q1.png" alt="Pie chart of screen technology" class="visual-img shadow-img">
+            </div>
+    
+            <div class="sub-partition">
+                <h3>Q4: Display Tech & Power Use</h3>
+                <p>OLED uses more power than LED.</p>
+                <img src="knime-q4.png" alt="Table view of power usage" class="visual-img shadow-img">
+            </div>
+    
+            <div class="sub-partition">
+                <h3>Q5: Screen Size vs Energy Use</h3>
+                <p>Power increases as screen size increases.</p>
+                <img src="knime-q5.png" alt="Scatter Plot" class="visual-img shadow-img">
+            </div>
+        </section>
+    
+        <!-- About the Data -->
+        <section class="partition">
+            <h2>About the Data</h2>
+            <ul>
+                <li><strong>Data Source:</strong> <a href="https://data.gov.au">data.gov.au</a></li>
+                <li><strong>Data Processing:</strong> Used KNIME to group, aggregate, and convert numerical values for visualisation. Steps included converting screen sizes, calculating power averages, and grouping by category.</li>
+                <li><strong>Privacy:</strong> No personal or private information was used. The dataset includes only public appliance specifications.</li>
+                <li><strong>Accuracy and Limitations:</strong> The data reflects only registered products and may not include unregistered or newly released TVs. Outliers may exist.</li>
+                <li><strong>Ethics:</strong> This visualisation was produced strictly for educational and non-commercial purposes, respecting all open data usage guidelines.</li>
+            </ul>
+        </section>
+
+        <!-- Final Recommendation -->
+        <section class="partition">
+            <h2 class="partition-title">Final Recommendation</h2>
+            <p>Consumers are encouraged to look for LED televisions from brands that demonstrate lower average power consumption. Medium-sized screens (around 55”) offer a balance between efficiency and viewing experience. Understanding these trends empowers better buying decisions and supports Australia's energy efficiency goals.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Novia Lai Li Xuan</p>
+        <p><em>GenAI Declaration:</em> This page includes visualisation support and copywriting assistance from generative AI tools.</p>
+    </footer>
+
+</body>
+</html>
